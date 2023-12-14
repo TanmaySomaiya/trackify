@@ -1,0 +1,34 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="menu.Master.cs" Inherits="finance_tracker.Site1" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Finance Tracker</title>
+    <link href="css/master.css" rel="stylesheet" />
+ 
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+        <header>
+            <div class="logo">
+                
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="Home.aspx">Home</a></li>
+                    <li><a href="Login.aspx">Login</a></li>
+                    
+                </ul>
+            </nav>
+        </header>
+        <div class="container">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
+
+
